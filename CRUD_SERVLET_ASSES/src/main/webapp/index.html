@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Add New Employee</title>
+    <style>
+		
+	body {
+	    font-family: Arial, sans-serif;
+	    background-color: rgb(194, 244, 230);
+	    margin: 0;
+	    padding: 0;
+	}
+
+	.container {
+	    width: 50%;
+	    margin: auto;
+	    background: #fff;
+	    padding: 20px;
+	    margin-top: 100px;
+	    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	}
+
+	h1 {
+	    text-align: center;
+	    color: #333;
+	}
+
+	table {
+		margin-left: 250px;
+		margin-top: 150px;
+   	 	width: 50%;
+   	 	
+	}
+
+	table td {
+    	padding: 10px;
+	}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select {
+	    width: 100%;
+	    padding: 8px;
+	    margin: 2px 0 10px 0;
+	    display: inline-block;
+	    box-sizing: border-box;
+	    border-radius: 10px;
+	    
+	}
+
+	input[type="submit"] {
+	    background-color: rgb(36, 188, 73);
+	    color: white;
+	    padding: 10px 15px;
+	    border: none;
+	    border-radius: 5px;
+	    cursor: pointer;
+	}
+
+	input[type="submit"]:hover {
+   	 background-color: #45a049;
+	}
+
+	a {
+	    display: block;
+	    text-align: center;
+	    margin-top: 20px;
+	    text-decoration: none;
+	    color: #333;
+	}
+
+	a:hover {
+   	 color: rgb(33, 160, 0);
+	}
+		
+	</style>
+</head>
+<body>
+
+    <h1>Add New Employee</h1>
+
+    <form action="SaveServleT" method="post">
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" /></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" /></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" /></td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td>
+                    <select name="country" style="width:150px">
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>UK</option>
+                        <option>Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Save Employee" />
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <br />
+
+    <a href="ViewServlet">View Employees</a>
+
+</body>
+</html>

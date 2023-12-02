@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>CRUD_SERVLET</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+  
+  	<!-- Servlet Mapping for ViewServlet -->
+    <servlet>
+        <servlet-name>SaveServleT</servlet-name>
+        <servlet-class>com.demo.web.SaveServleT</servlet-class>
+    </servlet>
+    
+  
+
+    <!-- Servlet Mapping for ViewServlet -->
+    <servlet>
+        <servlet-name>ViewServlet</servlet-name>
+        <servlet-class>com.demo.web.ViewServlet</servlet-class>
+    </servlet>
+    
+
+    <!-- Servlet Mapping for EditServlet -->
+    <servlet>
+        <servlet-name>EditServlet</servlet-name>
+        <servlet-class>com.demo.web.EditServlet</servlet-class>
+    </servlet>
+    
+
+    <!-- Servlet Mapping for EditServlet2 -->
+    <servlet>
+        <servlet-name>EditServlet2</servlet-name>
+        <servlet-class>com.demo.web.EditServlet2</servlet-class>
+    </servlet>
+    
+
+    <!-- Servlet Mapping for DeleteServlet -->
+    <servlet>
+        <servlet-name>DeleteServlet</servlet-name>
+        <servlet-class>com.demo.web.DeleteServlet</servlet-class>
+    </servlet>
+    
+  
+</web-app>
